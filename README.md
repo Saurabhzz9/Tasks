@@ -25,7 +25,7 @@ cd Tasks
 1. Navigate to the backend directory:
 
 ```bash
-cd backend
+cd visitor-counter
 ```
 
 2. Install the required dependencies:
