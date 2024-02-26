@@ -7,7 +7,7 @@ export const VisitorCountProvider = ({ children }) => {
   const [visits, setVisits] = useState({
     currentMonthVisits: 0,
     lastMonthVisits: 0,
-    uniqueVisitorsThisMonth: 0, // Example of additional analytics
+  
   });
 
   useEffect(() => {

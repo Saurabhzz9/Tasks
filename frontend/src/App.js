@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useVisitorCounts } from './VisitorCountContext'; // Import the hook to access context
+import { useVisitorCounts } from './VisitorCountContext';
 
-// Styled components
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;

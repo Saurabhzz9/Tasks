@@ -6,8 +6,6 @@ const mongoose = require('mongoose');
 const app = express();
 const PORT = 3001;
 
-// Connect to MongoDB
-
 mongoose.connect('mongodb://127.0.0.1:27017/visitorCounter')
   .then(() => console.log('MongoDB connection successful'))
   .catch(err => console.error('MongoDB connection error:', err));
@@ -28,15 +26,12 @@ app.get('/api/visits', async (req, res) => {
   const now = moment();
   const currentMonth = now.format('YYYY-MM');
 
-  // Record the visit with IP and timestamp
   const newVisit = new Visit({
     month: currentMonth,
     ip: ip,
   });
 
   await newVisit.save();
-
-  // Retrieve the count of visits for the current and last month
   const currentMonthVisits = await Visit.countDocuments({ month: currentMonth });
   const lastMonth = now.subtract(1, 'months').format('YYYY-MM');
   const lastMonthVisits = await Visit.countDocuments({ month: lastMonth });
