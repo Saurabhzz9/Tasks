@@ -17,9 +17,8 @@ Before you begin, ensure you have the following installed:
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/<your-username>/<your-repository-name>.git
-cd <your-repository-name>
-```
+git clone https://github.com/Saurabhzz9/Tasks.git
+cd Tasks
 
 ### Setting Up the Backend
 
