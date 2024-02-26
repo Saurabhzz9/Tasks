@@ -1,0 +1,16 @@
+# General
+node_modules/
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Frontend-specific
+/frontend/build
+
+# Backend-specific
+/backend/dist
+
+# OS-specific
+.DS_Store
+Thumbs.db
